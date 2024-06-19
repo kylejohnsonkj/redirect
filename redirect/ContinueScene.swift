@@ -84,23 +84,23 @@ class ContinueScene: SKScene {
         addChild(scores)
         
         let spend = SKSpriteNode(imageNamed: "spend.png")
-        spend.position = CGPoint(x: size.width/2 - 60, y: size.height/4 + 15)
+        spend.position = CGPoint(x: size.width/2, y: size.height/4 + 15)
         spend.size = CGSize(width: 100, height: 87.5)
         spend.name = "spend"
         spend.color = .black
         addChild(spend)
         
-        if GameScene.coins < 25 {
-            spend.colorBlendFactor = 0.5
-        } else {
-            spend.colorBlendFactor = 0
-        }
-
-        let watch = SKSpriteNode(imageNamed: "watch.png")
-        watch.position = CGPoint(x: size.width/2 + 60, y: size.height/4 + 15)
-        watch.size = CGSize(width: 100, height: 87.5)
-        watch.name = "watch"
-        addChild(watch)
+//        if GameScene.coins < 5 {
+//            spend.colorBlendFactor = 0.5
+//        } else {
+//            spend.colorBlendFactor = 0
+//        }
+//
+//        let watch = SKSpriteNode(imageNamed: "watch.png")
+//        watch.position = CGPoint(x: size.width/2 + 60, y: size.height/4 + 15)
+//        watch.size = CGSize(width: 100, height: 87.5)
+//        watch.name = "watch"
+//        addChild(watch)
     }
     
     func countdown(count: Int) {
@@ -148,9 +148,9 @@ class ContinueScene: SKScene {
             
             if node.name == "spend" {
                 
-                if GameScene.coins >= 25 {
+                if GameScene.coins >= 5 {
                 
-                    GameScene.coins = GameScene.coins - 25
+                    GameScene.coins = GameScene.coins - 5
                     GameScene.isContinued = true
                     
                     let purchaseSound = SKAction.playSoundFileNamed("purchase.mp3", waitForCompletion: false)
@@ -165,17 +165,17 @@ class ContinueScene: SKScene {
                         self.view?.presentScene(scene, transition:reveal)
                     })
                 }
-            } else if node.name == "watch" {
-                
-                runCountdown = false
-                Chartboost.showRewardedVideo(CBLocationMainMenu)
-                
-                let when = DispatchTime.now() + 1
-                DispatchQueue.main.asyncAfter(deadline: when) {
-                    ContinueScene.watchingVideo = true
-                }
-                
-                GameViewController.MusicHelper.sharedHelper.pauseBackgroundMusic()
+//            } else if node.name == "watch" {
+//                
+//                runCountdown = false
+//                Chartboost.showRewardedVideo(CBLocationMainMenu)
+//                
+//                let when = DispatchTime.now() + 1
+//                DispatchQueue.main.asyncAfter(deadline: when) {
+//                    ContinueScene.watchingVideo = true
+//                }
+//                
+//                GameViewController.MusicHelper.sharedHelper.pauseBackgroundMusic()
             } else {
                 
                 run(SKAction.run() {
@@ -187,27 +187,27 @@ class ContinueScene: SKScene {
         }
     }
     
-    override func update(_ currentTime: TimeInterval) {
-        
-        // when ad finishes playing, continue game
-        if ContinueScene.rewardGiven && !Chartboost.isAnyViewVisible() {
-            run(SKAction.run() {
-                let reveal = SKTransition.moveIn(with: SKTransitionDirection.down, duration: 0.5)
-                let scene = GameScene(size: self.size)
-                self.view?.presentScene(scene, transition:reveal)
-            })
-        }
-        
-        // if ad is cancelled, redirect to game over screen
-        if ContinueScene.watchingVideo && !Chartboost.isAnyViewVisible() {
-            GameViewController.MusicHelper.sharedHelper.resumeBackgroundMusic()
-            run(SKAction.run() {
-                let reveal = SKTransition.moveIn(with: SKTransitionDirection.down, duration: 0.5)
-                let scene = GameOverScene(size: self.size)
-                self.view?.presentScene(scene, transition:reveal)
-            })
-        }
-    }
+//    override func update(_ currentTime: TimeInterval) {
+//        
+//        // when ad finishes playing, continue game
+//        if ContinueScene.rewardGiven && !Chartboost.isAnyViewVisible() {
+//            run(SKAction.run() {
+//                let reveal = SKTransition.moveIn(with: SKTransitionDirection.down, duration: 0.5)
+//                let scene = GameScene(size: self.size)
+//                self.view?.presentScene(scene, transition:reveal)
+//            })
+//        }
+//        
+//        // if ad is cancelled, redirect to game over screen
+//        if ContinueScene.watchingVideo && !Chartboost.isAnyViewVisible() {
+//            GameViewController.MusicHelper.sharedHelper.resumeBackgroundMusic()
+//            run(SKAction.run() {
+//                let reveal = SKTransition.moveIn(with: SKTransitionDirection.down, duration: 0.5)
+//                let scene = GameOverScene(size: self.size)
+//                self.view?.presentScene(scene, transition:reveal)
+//            })
+//        }
+//    }
     
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

@@ -553,7 +553,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             
             if !AppDelegate.muteSounds { run(gameOverSound) }
             
-            if GameScene.isContinued == false && GameScene.score >= 10 && GameScene.score <= GameScene.highscore {
+            if GameScene.isContinued == false && GameScene.score >= 10 && GameScene.score <= GameScene.highscore && 
+                GameScene.coins >= 5 /* only option now */ {
                 
                 if GameScene.score > GameScene.highscore {
                     GameScene.highscore = GameScene.score

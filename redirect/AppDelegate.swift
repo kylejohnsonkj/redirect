@@ -7,11 +7,12 @@
 //
 
 import UIKit
-import Firebase
+import FirebaseCore
 import AVFoundation
+import GoogleMobileAds
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, ChartboostDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     static var muteSounds = false
@@ -19,10 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ChartboostDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        FIRApp.configure()
-        GADMobileAds.configure(withApplicationID: "ca-app-pub-4550171981441359~4985932025")
-        Chartboost.start(withAppId: "58d04c6d43150f43cb57adbc", appSignature: "0c1e786901976cd7612f61b78f7e65eff20c6252", delegate: self)
-        Chartboost.setDelegate(self)
+        FirebaseApp.configure()
+        GADMobileAds.sharedInstance().start()
+//        Chartboost.start(withAppId: "58d04c6d43150f43cb57adbc", appSignature: "0c1e786901976cd7612f61b78f7e65eff20c6252", delegate: self)
+//        Chartboost.setDelegate(self)
 
         return true
     }

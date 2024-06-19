@@ -57,7 +57,7 @@ class StartupScene: SKScene, GKGameCenterControllerDelegate {
         credits.text = "Created by Kyle Johnson, © 2017"
         credits.fontSize = 15
         credits.fontColor = .gray
-        credits.position = CGPoint(x: size.width/2, y: size.height - 30)
+        credits.position = CGPoint(x: size.width/2, y: size.height/4 - 80)
         addChild(credits)
         
         let icon = SKSpriteNode(imageNamed: "icon.png")
@@ -107,13 +107,13 @@ class StartupScene: SKScene, GKGameCenterControllerDelegate {
         storeNode.addChild(store)
         
         let gamecenter = SKSpriteNode(imageNamed: "game-center.png")
-        gamecenter.position = CGPoint(x: size.width - 40, y: size.height - 40)
+        gamecenter.position = CGPoint(x: size.width - 50, y: size.height - 50)
         gamecenter.size = CGSize(width: 50, height: 50)
         gamecenter.name = "gamecenter"
         addChild(gamecenter)
         
         let share = SKSpriteNode(imageNamed: "share.png")
-        share.position = CGPoint(x: 40, y: size.height - 40)
+        share.position = CGPoint(x: 50, y: size.height - 50)
         share.size = CGSize(width: 50, height: 50)
         share.name = "share"
         addChild(share)
