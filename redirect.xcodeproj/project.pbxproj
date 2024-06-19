@@ -3,13 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9BE0109599A5142B59A9693D /* Pods_redirect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455567C94EFDB63301D1BD7B /* Pods_redirect.framework */; };
 		E50EAB8B1E25A5360027FF4E /* StoreScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50EAB8A1E25A5360027FF4E /* StoreScene.swift */; };
-		E531CC401E8084D900FCF330 /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E531CC3F1E8084D900FCF330 /* Chartboost.framework */; };
 		E531CC421E8084F700FCF330 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E531CC411E8084F700FCF330 /* UIKit.framework */; };
 		E531CC441E80850000FCF330 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E531CC431E80850000FCF330 /* CoreGraphics.framework */; };
 		E531CC461E80850A00FCF330 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E531CC451E80850A00FCF330 /* StoreKit.framework */; };
@@ -18,11 +16,12 @@
 		E538E68B1E4C450B00753B22 /* tada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E538E68A1E4C450B00753B22 /* tada.mp3 */; };
 		E55CBFA11E25BEE2003F2BBA /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E55CBFA01E25BEE2003F2BBA /* music.mp3 */; };
 		E563A9011E5D201B00ECEAA7 /* ContinueScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E563A9001E5D201B00ECEAA7 /* ContinueScene.swift */; };
-		E56673E11E47F2F90007CF6E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E56673E01E47F2F90007CF6E /* GoogleService-Info.plist */; };
 		E56DF4C31E46A8AF00AD2C94 /* BallTrail.sks in Resources */ = {isa = PBXBuildFile; fileRef = E56DF4C21E46A8AF00AD2C94 /* BallTrail.sks */; };
 		E578E63B1E249A1200C26478 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E578E63A1E249A1200C26478 /* GameOverScene.swift */; };
 		E57F5DBA1E47C6100020F50E /* coin.wav in Resources */ = {isa = PBXBuildFile; fileRef = E57F5DB91E47C6100020F50E /* coin.wav */; };
 		E57F5DBC1E47C6210020F50E /* purchase.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E57F5DBB1E47C6210020F50E /* purchase.mp3 */; };
+		E5937C602C234BF700004D1B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5937C5F2C234BF700004D1B /* GoogleService-Info.plist */; };
+		E5937C622C234D6200004D1B /* redirect-f4585-firebase-crashreporting-uew58-be4083d56c.json in Resources */ = {isa = PBXBuildFile; fileRef = E5937C612C234D6200004D1B /* redirect-f4585-firebase-crashreporting-uew58-be4083d56c.json */; };
 		E596B5D61E248F7900E00C11 /* target.wav in Resources */ = {isa = PBXBuildFile; fileRef = E596B5D11E248F7900E00C11 /* target.wav */; };
 		E596B5D71E248F7900E00C11 /* paddle.wav in Resources */ = {isa = PBXBuildFile; fileRef = E596B5D21E248F7900E00C11 /* paddle.wav */; };
 		E596B5D91E24918100E00C11 /* game_over.wav in Resources */ = {isa = PBXBuildFile; fileRef = E596B5D81E24918100E00C11 /* game_over.wav */; };
@@ -35,28 +34,26 @@
 		E5CC7EFD1E1AD432006EC018 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5CC7EFB1E1AD432006EC018 /* Main.storyboard */; };
 		E5CC7F021E1AD432006EC018 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5CC7F001E1AD432006EC018 /* LaunchScreen.storyboard */; };
 		E5EE31D81E78C2E8000EDBD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5EE31D61E78C2E8000EDBD8 /* Assets.xcassets */; };
-		E5FF05741E534B89003D4EE9 /* redirect-f4585-firebase-crashreporting-uew58-be4083d56c.json in Resources */ = {isa = PBXBuildFile; fileRef = E5FF05731E534B89003D4EE9 /* redirect-f4585-firebase-crashreporting-uew58-be4083d56c.json */; };
+		E5FD57642C23554F006A35E9 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = E5FD57632C23554F006A35E9 /* GoogleMobileAds */; };
+		E5FD57662C2355CF006A35E9 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = E5FD57652C2355CF006A35E9 /* FirebaseCrashlytics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1F40E8CFBE20BFC301B36DD2 /* Pods-redirect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-redirect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-redirect/Pods-redirect.debug.xcconfig"; sourceTree = "<group>"; };
-		455567C94EFDB63301D1BD7B /* Pods_redirect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_redirect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E50EAB8A1E25A5360027FF4E /* StoreScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreScene.swift; sourceTree = "<group>"; };
-		E531CC3F1E8084D900FCF330 /* Chartboost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chartboost.framework; sourceTree = "<group>"; };
 		E531CC411E8084F700FCF330 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E531CC431E80850000FCF330 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E531CC451E80850A00FCF330 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		E531CC471E80851000FCF330 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		E531CC4A1E80855500FCF330 /* redirect-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "redirect-Bridging-Header.h"; sourceTree = "<group>"; };
 		E5360A1C1E5E83D40046F7D5 /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
 		E538E68A1E4C450B00753B22 /* tada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tada.mp3; sourceTree = "<group>"; };
 		E55CBFA01E25BEE2003F2BBA /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = music.mp3; path = ../music.mp3; sourceTree = "<group>"; };
 		E563A9001E5D201B00ECEAA7 /* ContinueScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinueScene.swift; sourceTree = "<group>"; };
-		E56673E01E47F2F90007CF6E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E56DF4C21E46A8AF00AD2C94 /* BallTrail.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BallTrail.sks; sourceTree = "<group>"; };
 		E578E63A1E249A1200C26478 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 		E57F5DB91E47C6100020F50E /* coin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = coin.wav; sourceTree = "<group>"; };
 		E57F5DBB1E47C6210020F50E /* purchase.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = purchase.mp3; sourceTree = "<group>"; };
+		E5937C5F2C234BF700004D1B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E5937C612C234D6200004D1B /* redirect-f4585-firebase-crashreporting-uew58-be4083d56c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "redirect-f4585-firebase-crashreporting-uew58-be4083d56c.json"; sourceTree = "<group>"; };
 		E596B5D11E248F7900E00C11 /* target.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = target.wav; sourceTree = "<group>"; };
 		E596B5D21E248F7900E00C11 /* paddle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = paddle.wav; sourceTree = "<group>"; };
 		E596B5D81E24918100E00C11 /* game_over.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = game_over.wav; sourceTree = "<group>"; };
@@ -71,8 +68,6 @@
 		E5CC7F011E1AD432006EC018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5CC7F031E1AD432006EC018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5EE31D61E78C2E8000EDBD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E5FF05731E534B89003D4EE9 /* redirect-f4585-firebase-crashreporting-uew58-be4083d56c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "redirect-f4585-firebase-crashreporting-uew58-be4083d56c.json"; sourceTree = "<group>"; };
-		FE73D4E9B0546F36E2E41FE0 /* Pods-redirect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-redirect.release.xcconfig"; path = "Pods/Target Support Files/Pods-redirect/Pods-redirect.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +79,9 @@
 				E531CC461E80850A00FCF330 /* StoreKit.framework in Frameworks */,
 				E531CC441E80850000FCF330 /* CoreGraphics.framework in Frameworks */,
 				E531CC421E8084F700FCF330 /* UIKit.framework in Frameworks */,
+				E5FD57642C23554F006A35E9 /* GoogleMobileAds in Frameworks */,
 				E5A92D501E53BC820084A410 /* SystemConfiguration.framework in Frameworks */,
-				E531CC401E8084D900FCF330 /* Chartboost.framework in Frameworks */,
-				9BE0109599A5142B59A9693D /* Pods_redirect.framework in Frameworks */,
+				E5FD57662C2355CF006A35E9 /* FirebaseCrashlytics in Frameworks */,
 				E597DD051E4D0902003E1CF8 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,21 +96,10 @@
 				E531CC451E80850A00FCF330 /* StoreKit.framework */,
 				E531CC431E80850000FCF330 /* CoreGraphics.framework */,
 				E531CC411E8084F700FCF330 /* UIKit.framework */,
-				E531CC3F1E8084D900FCF330 /* Chartboost.framework */,
 				E5A92D4F1E53BC820084A410 /* SystemConfiguration.framework */,
 				E597DD041E4D0902003E1CF8 /* GameKit.framework */,
-				455567C94EFDB63301D1BD7B /* Pods_redirect.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C805D079C69B292D3C54F0C6 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1F40E8CFBE20BFC301B36DD2 /* Pods-redirect.debug.xcconfig */,
-				FE73D4E9B0546F36E2E41FE0 /* Pods-redirect.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		E56DF4C51E46AA2000AD2C94 /* Scenes */ = {
@@ -150,7 +134,6 @@
 			children = (
 				E5CC7EF01E1AD432006EC018 /* redirect */,
 				B5D0A9B5BBDD999D6D138E80 /* Frameworks */,
-				C805D079C69B292D3C54F0C6 /* Pods */,
 				E5CC7EEF1E1AD432006EC018 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -175,9 +158,8 @@
 				E5EE31D61E78C2E8000EDBD8 /* Assets.xcassets */,
 				E5CC7F001E1AD432006EC018 /* LaunchScreen.storyboard */,
 				E5CC7F031E1AD432006EC018 /* Info.plist */,
-				E56673E01E47F2F90007CF6E /* GoogleService-Info.plist */,
-				E5FF05731E534B89003D4EE9 /* redirect-f4585-firebase-crashreporting-uew58-be4083d56c.json */,
-				E531CC4A1E80855500FCF330 /* redirect-Bridging-Header.h */,
+				E5937C5F2C234BF700004D1B /* GoogleService-Info.plist */,
+				E5937C612C234D6200004D1B /* redirect-f4585-firebase-crashreporting-uew58-be4083d56c.json */,
 			);
 			path = redirect;
 			sourceTree = "<group>";
@@ -189,12 +171,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5CC7F061E1AD432006EC018 /* Build configuration list for PBXNativeTarget "redirect" */;
 			buildPhases = (
-				6DA098B2FB901A85B08C9274 /* [CP] Check Pods Manifest.lock */,
 				E5CC7EEA1E1AD431006EC018 /* Sources */,
 				E5CC7EEB1E1AD431006EC018 /* Frameworks */,
 				E5CC7EEC1E1AD431006EC018 /* Resources */,
-				EBF94E6B947B59D68987540E /* [CP] Embed Pods Frameworks */,
-				A17BF635489A9D9BDF038FEC /* [CP] Copy Pods Resources */,
 				E5FF05751E534B8F003D4EE9 /* ShellScript */,
 			);
 			buildRules = (
@@ -202,6 +181,10 @@
 			dependencies = (
 			);
 			name = redirect;
+			packageProductDependencies = (
+				E5FD57632C23554F006A35E9 /* GoogleMobileAds */,
+				E5FD57652C2355CF006A35E9 /* FirebaseCrashlytics */,
+			);
 			productName = redirect;
 			productReference = E5CC7EEE1E1AD432006EC018 /* redirect.app */;
 			productType = "com.apple.product-type.application";
@@ -234,10 +217,15 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = E5CC7EE51E1AD431006EC018;
+			packageReferences = (
+				E5FD57612C235512006A35E9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				E5FD57622C23554F006A35E9 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
 			productRefGroup = E5CC7EEF1E1AD432006EC018 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -252,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5937C602C234BF700004D1B /* GoogleService-Info.plist in Resources */,
 				E56DF4C31E46A8AF00AD2C94 /* BallTrail.sks in Resources */,
 				E57F5DBC1E47C6210020F50E /* purchase.mp3 in Resources */,
 				E538E68B1E4C450B00753B22 /* tada.mp3 in Resources */,
@@ -259,9 +248,8 @@
 				E5EE31D81E78C2E8000EDBD8 /* Assets.xcassets in Resources */,
 				E5360A1D1E5E83D40046F7D5 /* beep.wav in Resources */,
 				E596B5D71E248F7900E00C11 /* paddle.wav in Resources */,
-				E56673E11E47F2F90007CF6E /* GoogleService-Info.plist in Resources */,
 				E57F5DBA1E47C6100020F50E /* coin.wav in Resources */,
-				E5FF05741E534B89003D4EE9 /* redirect-f4585-firebase-crashreporting-uew58-be4083d56c.json in Resources */,
+				E5937C622C234D6200004D1B /* redirect-f4585-firebase-crashreporting-uew58-be4083d56c.json in Resources */,
 				E596B5D91E24918100E00C11 /* game_over.wav in Resources */,
 				E55CBFA11E25BEE2003F2BBA /* music.mp3 in Resources */,
 				E5CC7F021E1AD432006EC018 /* LaunchScreen.storyboard in Resources */,
@@ -272,36 +260,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6DA098B2FB901A85B08C9274 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A17BF635489A9D9BDF038FEC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-redirect/Pods-redirect-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E5FF05751E534B8F003D4EE9 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,22 +271,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Replace this with the GOOGLE_APP_ID from your GoogleService-Info.plist file\nGOOGLE_APP_ID=1:282393252581:ios:fddfb427071deb29\n\n# Replace the /Path/To/ServiceAccount.json with the path to the key you just downloaded\n\"${PODS_ROOT}\"/FirebaseCrash/upload-sym \"${PROJECT_DIR}/redirect/redirect-f4585-firebase-crashreporting-uew58-be4083d56c.json\"\n";
-		};
-		EBF94E6B947B59D68987540E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-redirect/Pods-redirect-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "# Replace this with the GOOGLE_APP_ID from your GoogleService-Info.plist file\nGOOGLE_APP_ID=1:282393252581:ios:fddfb427071deb29\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -468,7 +411,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -476,7 +420,6 @@
 		};
 		E5CC7F071E1AD432006EC018 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F40E8CFBE20BFC301B36DD2 /* Pods-redirect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -490,24 +433,25 @@
 					"COCOAPODS=1",
 				);
 				INFOPLIST_FILE = redirect/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kjapps.redirect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "redirect/redirect-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		E5CC7F081E1AD432006EC018 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE73D4E9B0546F36E2E41FE0 /* Pods-redirect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -521,16 +465,18 @@
 					"COCOAPODS=1",
 				);
 				INFOPLIST_FILE = redirect/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kjapps.redirect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "redirect/redirect-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -557,6 +503,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E5FD57612C235512006A35E9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.28.0;
+			};
+		};
+		E5FD57622C23554F006A35E9 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E5FD57632C23554F006A35E9 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5FD57622C23554F006A35E9 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+		E5FD57652C2355CF006A35E9 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5FD57612C235512006A35E9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E5CC7EE61E1AD431006EC018 /* Project object */;
 }
