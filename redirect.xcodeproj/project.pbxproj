@@ -176,7 +176,6 @@
 				E5CC7EEA1E1AD431006EC018 /* Sources */,
 				E5CC7EEB1E1AD431006EC018 /* Frameworks */,
 				E5CC7EEC1E1AD431006EC018 /* Resources */,
-				E5FF05751E534B8F003D4EE9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -261,22 +260,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		E5FF05751E534B8F003D4EE9 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Replace this with the GOOGLE_APP_ID from your GoogleService-Info.plist file\nGOOGLE_APP_ID=1:282393252581:ios:fddfb427071deb29\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E5CC7EEA1E1AD431006EC018 /* Sources */ = {
