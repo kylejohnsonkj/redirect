@@ -596,7 +596,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 paddleSpeed = 1.6 - (Double(GameScene.score) / 250.0)
             }
             
-            let rotation = SKAction.rotate(byAngle: CGFloat(M_PI), duration: paddleSpeed)
+            let rotation = SKAction.rotate(byAngle: .pi, duration: paddleSpeed)
             paddle.removeAllActions()
             
             if countdownLabel.isHidden {
@@ -665,7 +665,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     func randomPointOnUpperCircle(radius: Float, center: CGPoint) -> CGPoint {
         // Random angle in [0, 2*pi]
-        let theta = Float(arc4random_uniform(UInt32.max))/Float(UInt32.max-1) * Float(M_PI)
+        let theta = Float(arc4random_uniform(UInt32.max))/Float(UInt32.max-1) * .pi
         // Convert polar to cartesian
         let x = radius * cosf(theta)
         let y = radius * sinf(theta)
@@ -674,7 +674,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     func randomPointOnLowerCircle(radius: Float, center: CGPoint) -> CGPoint {
         // Random angle in [0, 2*pi]
-        let theta = Float(arc4random_uniform(UInt32.max))/Float(UInt32.max-1) * Float(M_PI) + Float(M_PI)
+        let theta = Float(arc4random_uniform(UInt32.max))/Float(UInt32.max-1) * .pi + .pi
         // Convert polar to cartesian
         let x = radius * cosf(theta)
         let y = radius * sinf(theta)

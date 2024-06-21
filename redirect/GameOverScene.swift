@@ -89,7 +89,7 @@ class GameOverScene: SKScene, GKGameCenterControllerDelegate {
         let scale2 = SKAction.scale(by: 1/1.2, duration: 0.25)
         medal.run(SKAction.sequence([scale1, scale2]))
         
-        let rotation = SKAction.rotate(byAngle: CGFloat(M_PI), duration: 2.0)
+        let rotation = SKAction.rotate(byAngle: .pi, duration: 2.0)
         if shouldRotate == true {
             medal.run(SKAction.repeatForever(rotation.reversed()))
         }
