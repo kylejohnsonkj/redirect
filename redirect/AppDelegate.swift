@@ -10,6 +10,7 @@ import UIKit
 import FirebaseCore
 import AVFoundation
 import GoogleMobileAds
+import AppTrackingTransparency
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,7 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         FirebaseApp.configure()
-        GADMobileAds.sharedInstance().start()
 //        Chartboost.start(withAppId: "58d04c6d43150f43cb57adbc", appSignature: "0c1e786901976cd7612f61b78f7e65eff20c6252", delegate: self)
 //        Chartboost.setDelegate(self)
 
@@ -59,6 +59,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             GameViewController.MusicHelper.sharedHelper.audioPlayer?.volume = 1.0
             AppDelegate.muteSounds = false
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            if #available(iOS 14, *) {
+                ATTrackingManager.requestTrackingAuthorization { (status) in
+                    GADMobileAds.sharedInstance().start()
+                }
+            } else {
+                GADMobileAds.sharedInstance().start()
+            }
         }
     }
     

@@ -4,3 +4,4 @@ redirect/redirect-f4585-firebase-crashreporting-uew58-be4083d56c.json
 redirect/GoogleService-Info.plist
 *.xcuserstate
 .DS_Store
+*.xcbkptlist
