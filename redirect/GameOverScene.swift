@@ -231,7 +231,7 @@ class GameOverScene: SKScene, GKGameCenterControllerDelegate {
     // submits the highscore to Game Center
     func submitHighscore() {
         
-        if GKLocalPlayer.localPlayer().isAuthenticated {
+        if GKLocalPlayer.local.isAuthenticated {
             
             let scoreReporter = GKScore(leaderboardIdentifier: "redirect_top_score")
             scoreReporter.value = Int64(GameScene.highscore)
@@ -245,7 +245,7 @@ class GameOverScene: SKScene, GKGameCenterControllerDelegate {
     // updates achievements on Game Center
     func updateAchievements() {
         
-        if GKLocalPlayer.localPlayer().isAuthenticated {
+        if GKLocalPlayer.local.isAuthenticated {
             
             let achievement_ids = ["redirect_bronze_medal", "redirect_silver_medal", "redirect_gold_medal", "redirect_ruby_achievement", "redirect_diamond_achievement"]
             

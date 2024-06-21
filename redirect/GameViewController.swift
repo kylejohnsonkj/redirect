@@ -108,7 +108,7 @@ class GameViewController: UIViewController {
     
     func authenticateLocalPlayer() {
         
-        let localPlayer: GKLocalPlayer = GKLocalPlayer.localPlayer()
+        let localPlayer: GKLocalPlayer = GKLocalPlayer.local
         localPlayer.authenticateHandler = {(ViewController, error) -> Void in
             
             if((ViewController) != nil) {
@@ -136,7 +136,7 @@ class GameViewController: UIViewController {
             let music = NSURL(fileURLWithPath: Bundle.main.path(forResource: "music", ofType: "mp3")!)
             
             do {
-                try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient)
+                try AVAudioSession.sharedInstance().setCategory(.ambient)
                 try AVAudioSession.sharedInstance().setActive(true)
                 
             } catch let error as NSError {

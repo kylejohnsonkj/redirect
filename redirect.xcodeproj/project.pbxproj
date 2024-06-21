@@ -204,7 +204,7 @@
 					E5CC7EED1E1AD431006EC018 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = GP799FVH94;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1540;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.GameCenter = {
@@ -442,7 +442,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kjapps.redirect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -474,7 +474,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kjapps.redirect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
